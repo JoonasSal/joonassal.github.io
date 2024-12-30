@@ -1,7 +1,32 @@
 <script>
 	import '../app.css';
 	import { page } from '$app/stores';
+	import { onMount } from 'svelte';
+
 	let isMenuOpen = false;
+	let darkMode;
+
+	onMount(() => {
+		// Tarkista tallennettu teema tai järjestelmän teema
+		darkMode = localStorage.theme === 'dark' || 
+			(!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches);
+		updateTheme();
+	});
+
+	function toggleTheme() {
+		darkMode = !darkMode;
+		updateTheme();
+	}
+
+	function updateTheme() {
+		if (darkMode) {
+			document.documentElement.classList.add('dark');
+			localStorage.theme = 'dark';
+		} else {
+			document.documentElement.classList.remove('dark');
+			localStorage.theme = 'light';
+		}
+	}
 </script>
 
 <header class="fixed w-full bg-white/80 dark:bg-gray-900/80 backdrop-blur-sm z-50 border-b border-gray-200 dark:border-gray-800">
@@ -29,7 +54,7 @@
 				<a href="/#about" class="hover:text-blue-600">About</a>
 				<a href="/#projects" class="hover:text-blue-600">Projects</a>
 				<a href="/#skills" class="hover:text-blue-600">Skills</a>
-				<a href="/#contact" class="hover:text-blue-600">Contact</a>
+				<a href="/#contact" class="hover:text-blue-600">Links</a>
 			</div>
 		</div>
 
@@ -39,7 +64,7 @@
 				<a href="/#about" class="block hover:text-blue-600">About</a>
 				<a href="/#projects" class="block hover:text-blue-600">Projects</a>
 				<a href="/#skills" class="block hover:text-blue-600">Skills</a>
-				<a href="/#contact" class="block hover:text-blue-600">Contact</a>
+				<a href="/#contact" class="block hover:text-blue-600">Links</a>
 			</div>
 		{/if}
 	</nav>

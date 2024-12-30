@@ -3,7 +3,7 @@
   const personalInfo = {
     name: "Joonas Salmela",
     title: "Aspiring Developer",
-    description: "I'm a passionate developer with experience in building modern web applications. I love creating elegant solutions to complex problems."
+    description: "I'm currently halfway through my Bachelor of Engineering in Information Technology, exploring full-stack development and indulging my passion for all things tech. I also love games, books, and bringing a dash of quirky humor wherever I go."
   };
 </script>
 
@@ -15,8 +15,8 @@
       <h2 class="text-2xl sm:text-3xl text-gray-600 dark:text-gray-300 mb-8">{personalInfo.title}</h2>
       <p class="text-lg text-gray-600 dark:text-gray-300 mb-8">{personalInfo.description}</p>
       <div class="space-x-4">
-        <a href="#contact" class="btn btn-primary">Get in Touch</a>
-        <a href="#projects" class="btn bg-gray-200 text-gray-800 hover:bg-gray-300 dark:bg-gray-700 dark:text-gray-100">View Projects</a>
+        <a href="#links" class="btn btn-primary">Links</a>
+        <a href="#projects" class="btn bg-gray-200 text-gray-800 hover:bg-gray-800 dark:bg-gray-700 dark:text-gray-100">View Projects</a>
       </div>
     </div>
   </div>
@@ -124,10 +124,10 @@
   </div>
 </section>
 
-<!-- Contact Section -->
-<section id="contact" class="section bg-gray-100 dark:bg-gray-800">
+<!-- Links Section -->
+<section id="links" class="section bg-gray-100 dark:bg-gray-800">
   <div class="container">
-    <h2 class="text-3xl font-bold text-center mb-12">Get in Touch</h2>
+    <h2 class="text-3xl font-bold text-center mb-12">Links</h2>
     <div class="max-w-xl mx-auto flex flex-col items-center space-y-6">
       <a href="mailto:joosal@outlook.com" 
          class="text-2xl hover:text-blue-600 transition-colors">
