@@ -30,9 +30,9 @@
       <p>
         My journey in technology began in elementary school when I built my first computer. 
         Over the years, my enthusiasm and curiosity for computing have only grown, 
-        and I’ve consistently followed the latest advancements in the field. I decided to 
-        deepen my knowledge by studying Information and Communication Technology engineering, 
-        allowing me to combine my passion for tech with practical, real-world projects. My dream 
+        and I’ve consistently followed the latest advancements in the field. I decided to deepen my 
+        knowledge by studying a Bachelor of Engineering in Information Technology, allowing me to 
+        combine my passion for tech with practical, real-world projects. My dream 
         is to work on cutting-edge technology initiatives, pushing myself to learn and evolve every day.
       </p>
     </div>
