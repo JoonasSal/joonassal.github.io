@@ -2,45 +2,45 @@ name: Build and Deploy
 
 on:
   push:
-    branches: [ main ]  # Action käynnistyy aina, kun puskataan main-haaraan
+    branches: [ main ]  # Action when main branch is pushed
 
 permissions:
-  contents: write       # Mahdollistaa commit & push
+  contents: write       # Allows commit & push
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. Kloonaa koodi
+      # 1. Clone the code
       - uses: actions/checkout@v3
 
-      # 2. Asenna haluttu Node.js -versio
+      # 2. Install the desired Node.js version
       - name: Use Node
         uses: actions/setup-node@v3
         with:
           node-version: 22
 
-      # 3. Asenna riippuvuudet
+      # 3. Install dependencies
       - name: Install dependencies
         run: npm install
 
-      # 4. Rakenna projekti (luo build-kansion)
+      # 4. Build the project (create build-folder)
       - name: Build the project
         run: npm run build
 
-      # 5. Lisää tyhjä .nojekyll-tiedosto build-hakemistoon
+      # 5. Add empty .nojekyll file to build-folder
       - name: Add .nojekyll file
         run: echo "" > build/.nojekyll
 
-      # 6. Tyhjennä ja luo docs-kansio, kopioi build sisään
+      # 6. Clear and create docs-folder, copy build to it
       - name: Copy build to docs folder
         run: |
           rm -rf docs
           mkdir docs
-          cp -R build/* docs
+          cp -a build/. docs
 
-      # 7. Commitoi ja puske muutokset main-haaraan
+      # 7. Commit and push changes to main branch
       - name: Commit and push changes
         run: |
           git config --global user.name 'github-actions[bot]'
