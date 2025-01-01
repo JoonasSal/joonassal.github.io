@@ -62,14 +62,20 @@
 <!-- Skills Section -->
 <section id="skills" class="section">
   <div class="container">
-    <h2 class="text-3xl font-bold text-center mb-12">Skills & Technologies</h2>
+    <!-- Pääotsikko -->
+    <h2 class="text-3xl font-bold text-center mb-2">Skills & Technologies</h2>
     
+    <!-- Selittävä alaotsikko/teksti -->
+    <p class="text-center text-sm text-gray-500 mb-12">
+      These ratings are relative to my own skill set, where 5/5 represents my personal best.
+    </p>
+
     <div class="grid md:grid-cols-2 gap-8">
       <!-- Hard Skills -->
       <div>
         <h3 class="text-2xl font-bold mb-6">Technical Skills</h3>
-        <div class="space-y-6">
-          <!-- Skill Item -->
+        <div class="space-y-6 max-w-sm">
+          <!-- Skill Item: React -->
           <div class="flex flex-col space-y-2">
             <div class="flex justify-between">
               <span class="font-medium">React</span>
@@ -80,14 +86,47 @@
             </div>
           </div>
 
-          <!-- Skill Item -->
+          <!-- Skill Item: React Native -->
           <div class="flex flex-col space-y-2">
             <div class="flex justify-between">
-              <span class="font-medium">Java</span>
+              <span class="font-medium">React Native</span>
+              <span class="text-sm text-gray-600">5/5</span>
+            </div>
+            <div class="h-2 bg-gray-200 rounded-full">
+              <div class="h-full bg-blue-600 rounded-full" style="width: 100%"></div>
+            </div>
+          </div>
+
+          <!-- Skill Item: C++ -->
+          <div class="flex flex-col space-y-2">
+            <div class="flex justify-between">
+              <span class="font-medium">C++</span>
               <span class="text-sm text-gray-600">2/5</span>
             </div>
             <div class="h-2 bg-gray-200 rounded-full">
               <div class="h-full bg-blue-600 rounded-full" style="width: 40%"></div>
+            </div>
+          </div>
+
+          <!-- Skill Item: Kotlin -->
+          <div class="flex flex-col space-y-2">
+            <div class="flex justify-between">
+              <span class="font-medium">Kotlin</span>
+              <span class="text-sm text-gray-600">2/5</span>
+            </div>
+            <div class="h-2 bg-gray-200 rounded-full">
+              <div class="h-full bg-blue-600 rounded-full" style="width: 40%"></div>
+            </div>
+          </div>
+
+          <!-- Skill Item: AI Tools -->
+          <div class="flex flex-col space-y-2">
+            <div class="flex justify-between">
+              <span class="font-medium">AI Tools</span>
+              <span class="text-sm text-gray-600">4/5</span>
+            </div>
+            <div class="h-2 bg-gray-200 rounded-full">
+              <div class="h-full bg-blue-600 rounded-full" style="width: 80%"></div>
             </div>
           </div>
         </div>
@@ -96,8 +135,8 @@
       <!-- Soft Skills -->
       <div>
         <h3 class="text-2xl font-bold mb-6">Soft Skills</h3>
-        <div class="space-y-6">
-          <!-- Skill Item -->
+        <div class="space-y-6 max-w-sm">
+          <!-- Skill Item: Teamwork -->
           <div class="flex flex-col space-y-2">
             <div class="flex justify-between">
               <span class="font-medium">Teamwork</span>
@@ -108,7 +147,7 @@
             </div>
           </div>
 
-          <!-- Skill Item -->
+          <!-- Skill Item: Problem Solving -->
           <div class="flex flex-col space-y-2">
             <div class="flex justify-between">
               <span class="font-medium">Problem Solving</span>
@@ -116,6 +155,39 @@
             </div>
             <div class="h-2 bg-gray-200 rounded-full">
               <div class="h-full bg-blue-600 rounded-full" style="width: 80%"></div>
+            </div>
+          </div>
+
+          <!-- Skill Item: Adaptability in Diverse Teams -->
+          <div class="flex flex-col space-y-2">
+            <div class="flex justify-between">
+              <span class="font-medium">Adaptability in Diverse Teams</span>
+              <span class="text-sm text-gray-600">5/5</span>
+            </div>
+            <div class="h-2 bg-gray-200 rounded-full">
+              <div class="h-full bg-blue-600 rounded-full" style="width: 100%"></div>
+            </div>
+          </div>
+
+          <!-- Skill Item: Professional Experience -->
+          <div class="flex flex-col space-y-2">
+            <div class="flex justify-between">
+              <span class="font-medium">Professional Experience</span>
+              <span class="text-sm text-gray-600">4/5</span>
+            </div>
+            <div class="h-2 bg-gray-200 rounded-full">
+              <div class="h-full bg-blue-600 rounded-full" style="width: 80%"></div>
+            </div>
+          </div>
+
+          <!-- Skill Item: Quick & Enthusiastic Learner -->
+          <div class="flex flex-col space-y-2">
+            <div class="flex justify-between">
+              <span class="font-medium">Quick & Enthusiastic Learner</span>
+              <span class="text-sm text-gray-600">5/5</span>
+            </div>
+            <div class="h-2 bg-gray-200 rounded-full">
+              <div class="h-full bg-blue-600 rounded-full" style="width: 100%"></div>
             </div>
           </div>
         </div>
