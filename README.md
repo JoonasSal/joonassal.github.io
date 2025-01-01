@@ -34,11 +34,11 @@ A modern, responsive portfolio website built with SvelteKit and TailwindCSS
    ```bash
    npm install
 
-4. **Start the development server**
+3. **Start the development server**
    ```bash
    npm run dev
 
-6. **Open [http://localhost:5173](http://localhost:5173) in your browser**
+4. **Open [http://localhost:5173](http://localhost:5173) in your browser**
 
 ## Development
 
