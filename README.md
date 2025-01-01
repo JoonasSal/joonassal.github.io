@@ -8,6 +8,7 @@ A modern, responsive portfolio website built with SvelteKit and TailwindCSS
 - Skills visualization with progress bars
 - Project showcase section
 - Links section
+- **Automated build & deploy** pipeline (GitHub Actions)
 
 ## Tech Stack
 
