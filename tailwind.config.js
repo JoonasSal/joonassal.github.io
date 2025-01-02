@@ -5,8 +5,14 @@ export default {
 	content: ['./src/**/*.{html,js,svelte,ts}'],
 
 	theme: {
-		extend: {}
+		extend: {
+			fontFamily: {
+				poppins: ['Poppins', 'system-ui', 'sans-serif'],
+			},
+		},
 	},
 
-	plugins: [typography]
+	plugins: [typography],
+
+	darkMode: 'class'
 };

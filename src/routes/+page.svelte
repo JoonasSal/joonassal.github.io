@@ -44,14 +44,42 @@
   <div class="container">
     <h2 class="text-3xl font-bold text-center mb-12">Featured Projects</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-      <!-- Project Card (repeat for each project) -->
-      <div class="bg-white dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg">
-        <img src="https://via.placeholder.com/400x300" alt="Project preview" class="w-full h-48 object-cover" />
+      <!-- HuiputinPaivakirja Project Card -->
+      <div class="bg-white dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+        <div class="relative overflow-hidden group">
+          <img 
+            src="https://via.placeholder.com/400x300" 
+            alt="Project preview" 
+            class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" 
+          />
+          <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+        </div>
         <div class="p-6">
           <h3 class="text-xl font-bold mb-2">HuiputinPaivakirja</h3>
           <p class="text-gray-600 dark:text-gray-300 mb-4">This is a mobile application built using React Native and Google Firebase services. The application is a bouldering tracking tool tailored currently for a single local climbing hall at OKK (Oulun kiipeilykeskus; Oulu climbing centre). It allows users to log and track their climbs, create and manage climbing routes, and engage with other users through voting and content management.</p>
           <div class="flex space-x-4">
-            <a href="https://github.com/HuipuntinPaivakirja/HuiputinPaivakirja" class="text-blue-600 hover:text-blue-700">GitHub</a>
+            <a href="https://github.com/HuipuntinPaivakirja/HuiputinPaivakirja" 
+               class="text-blue-600 hover:text-blue-700 transition-colors duration-300">GitHub</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Portfolio Website Project Card -->
+      <div class="bg-white dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+        <div class="relative overflow-hidden group">
+          <img 
+            src="/portfolio-header.png" 
+            alt="Portfolio website header showing dark theme" 
+            class="w-full h-48 object-cover object-top transition-transform duration-500 group-hover:scale-110" 
+          />
+          <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">Portfolio Website</h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-4">A modern, responsive portfolio website built with SvelteKit and TailwindCSS. Features include automated build and deploy pipeline with GitHub Actions, skills visualization with progress bars, project showcase section, and responsive design that works seamlessly across all devices.</p>
+          <div class="flex space-x-4">
+            <a href="https://github.com/JoonasSal/joonassal.github.io" 
+               class="text-blue-600 hover:text-blue-700 transition-colors duration-300">GitHub</a>
           </div>
         </div>
       </div>
@@ -151,10 +179,10 @@
           <div class="flex flex-col space-y-2">
             <div class="flex justify-between">
               <span class="font-medium">Problem Solving</span>
-              <span class="text-sm text-gray-600">4/5</span>
+              <span class="text-sm text-gray-600">5/5</span>
             </div>
             <div class="h-2 bg-gray-200 rounded-full">
-              <div class="h-full bg-blue-600 rounded-full" style="width: 80%"></div>
+              <div class="h-full bg-blue-600 rounded-full" style="width: 100%"></div>
             </div>
           </div>
 
