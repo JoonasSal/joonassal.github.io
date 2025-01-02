@@ -10,7 +10,14 @@
 <!-- Hero Section -->
 <section class="section bg-gradient-to-br from-blue-50 to-indigo-50 dark:from-gray-900 dark:to-gray-800">
   <div class="container">
-    <div class="max-w-3xl mx-auto text-center">
+    <div class="max-w-4xl mx-auto text-center">
+      <div class="mb-8 flex justify-center">
+        <img 
+          src="/profilepic.png" 
+          alt="Joonas Salmela" 
+          class="w-48 h-48 rounded-full object-cover border-4 border-white dark:border-gray-700 shadow-lg"
+        />
+      </div>
       <h1 class="text-4xl sm:text-5xl font-bold mb-6">{personalInfo.name}</h1>
       <h2 class="text-2xl sm:text-3xl text-gray-600 dark:text-gray-300 mb-8">{personalInfo.title}</h2>
       <p class="text-lg text-gray-600 dark:text-gray-300 mb-8">{personalInfo.description}</p>
@@ -48,8 +55,8 @@
       <div class="bg-white dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl">
         <div class="relative overflow-hidden group">
           <img 
-            src="https://via.placeholder.com/400x300" 
-            alt="Project preview" 
+            src="/huiputinmashup.png" 
+            alt="HuiputinPaivakirja app preview showing different screens" 
             class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" 
           />
           <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
