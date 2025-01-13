@@ -63,7 +63,7 @@
 					<a href="/#about" class="hover:text-blue-600">About</a>
 					<a href="/#projects" class="hover:text-blue-600">Projects</a>
 					<a href="/#skills" class="hover:text-blue-600">Skills</a>
-					<a href="/#contact" class="hover:text-blue-600">Links</a>
+					<a href="/#contact" class="hover:text-blue-600">Contact</a>
 				</div>
 			</div>
 
@@ -73,7 +73,7 @@
 					<a href="/#about" class="block hover:text-blue-600">About</a>
 					<a href="/#projects" class="block hover:text-blue-600">Projects</a>
 					<a href="/#skills" class="block hover:text-blue-600">Skills</a>
-					<a href="/#contact" class="block hover:text-blue-600">Links</a>
+					<a href="/#contact" class="block hover:text-blue-600">Contact</a>
 				</div>
 			{/if}
 		</nav>

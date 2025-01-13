@@ -3,7 +3,7 @@
   const personalInfo = {
     name: "Joonas Salmela",
     title: "Aspiring Developer",
-    description: "I'm currently halfway through my Bachelor of Engineering in Information Technology, exploring full-stack development and indulging my passion for all things tech. I also love games, books, and bringing a dash of quirky humor wherever I go."
+    description: "I'm currently in my third year of studies for a Bachelor of Engineering in Information Technology, exploring software development and indulging my passion for all things tech. I also love games, books, and bringing a dash of quirky humor wherever I go."
   };
 </script>
 
@@ -22,8 +22,18 @@
       <h2 class="text-2xl sm:text-3xl text-gray-600 dark:text-gray-300 mb-8">{personalInfo.title}</h2>
       <p class="text-lg text-gray-600 dark:text-gray-300 mb-8">{personalInfo.description}</p>
       <div class="space-x-4">
-        <a href="#links" class="btn btn-primary">Links</a>
-        <a href="#projects" class="btn bg-gray-200 text-gray-800 hover:bg-gray-800 dark:bg-gray-700 dark:text-gray-100">View Projects</a>
+        <a href="https://github.com/JoonasSal" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="btn bg-gray-800 text-white hover:bg-gray-700 dark:bg-gray-700 dark:hover:bg-gray-600">
+           GitHub
+        </a>
+        <a href="https://linkedin.com/in/joonas-salmela-6a8306346" 
+           target="_blank" 
+           rel="noopener noreferrer" 
+           class="btn bg-blue-600 text-white hover:bg-blue-700">
+           LinkedIn
+        </a>
       </div>
     </div>
   </div>
@@ -97,163 +107,64 @@
 <!-- Skills Section -->
 <section id="skills" class="section">
   <div class="container">
-    <!-- Pääotsikko -->
-    <h2 class="text-3xl font-bold text-center mb-2">Skills & Technologies</h2>
+    <h2 class="text-3xl font-bold text-center mb-12">Skills</h2>
     
-    <!-- Selittävä alaotsikko/teksti -->
-    <p class="text-center text-sm text-gray-500 mb-12">
-      These ratings are relative to my own skill set, where 5/5 represents my personal best.
-    </p>
+    <div class="grid md:grid-cols-3 gap-8">
+      <!-- Coding Languages -->
+      <div class="text-center">
+        <h3 class="text-2xl font-bold mb-6">Coding</h3>
+        <ul class="space-y-3 text-gray-600 dark:text-gray-300">
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>React Native</li>
+          <li>Kotlin</li>
+          <li>C++</li>
+          <li>Python</li>
+        </ul>
+      </div>
 
-    <div class="grid md:grid-cols-2 gap-8">
-      <!-- Hard Skills -->
-      <div>
-        <h3 class="text-2xl font-bold mb-6">Technical Skills</h3>
-        <div class="space-y-6 max-w-sm">
-          <!-- Skill Item: React -->
-          <div class="flex flex-col space-y-2">
-            <div class="flex justify-between">
-              <span class="font-medium">React</span>
-              <span class="text-sm text-gray-600">5/5</span>
-            </div>
-            <div class="h-2 bg-gray-200 rounded-full">
-              <div class="h-full bg-blue-600 rounded-full" style="width: 100%"></div>
-            </div>
-          </div>
-
-          <!-- Skill Item: React Native -->
-          <div class="flex flex-col space-y-2">
-            <div class="flex justify-between">
-              <span class="font-medium">React Native</span>
-              <span class="text-sm text-gray-600">5/5</span>
-            </div>
-            <div class="h-2 bg-gray-200 rounded-full">
-              <div class="h-full bg-blue-600 rounded-full" style="width: 100%"></div>
-            </div>
-          </div>
-
-          <!-- Skill Item: C++ -->
-          <div class="flex flex-col space-y-2">
-            <div class="flex justify-between">
-              <span class="font-medium">C++</span>
-              <span class="text-sm text-gray-600">2/5</span>
-            </div>
-            <div class="h-2 bg-gray-200 rounded-full">
-              <div class="h-full bg-blue-600 rounded-full" style="width: 40%"></div>
-            </div>
-          </div>
-
-          <!-- Skill Item: Kotlin -->
-          <div class="flex flex-col space-y-2">
-            <div class="flex justify-between">
-              <span class="font-medium">Kotlin</span>
-              <span class="text-sm text-gray-600">2/5</span>
-            </div>
-            <div class="h-2 bg-gray-200 rounded-full">
-              <div class="h-full bg-blue-600 rounded-full" style="width: 40%"></div>
-            </div>
-          </div>
-
-          <!-- Skill Item: AI Tools -->
-          <div class="flex flex-col space-y-2">
-            <div class="flex justify-between">
-              <span class="font-medium">AI Tools</span>
-              <span class="text-sm text-gray-600">4/5</span>
-            </div>
-            <div class="h-2 bg-gray-200 rounded-full">
-              <div class="h-full bg-blue-600 rounded-full" style="width: 80%"></div>
-            </div>
-          </div>
-        </div>
+      <!-- Tools & Technologies -->
+      <div class="text-center">
+        <h3 class="text-2xl font-bold mb-6">Tools & Technologies</h3>
+        <ul class="space-y-3 text-gray-600 dark:text-gray-300">
+          <li>Node.js</li>
+          <li>Firebase</li>
+          <li>Docker</li>
+          <li>Proxmox</li>
+          <li>Git</li>
+          <li>MySQL</li>
+        </ul>
       </div>
 
       <!-- Soft Skills -->
-      <div>
+      <div class="text-center">
         <h3 class="text-2xl font-bold mb-6">Soft Skills</h3>
-        <div class="space-y-6 max-w-sm">
-          <!-- Skill Item: Teamwork -->
-          <div class="flex flex-col space-y-2">
-            <div class="flex justify-between">
-              <span class="font-medium">Teamwork</span>
-              <span class="text-sm text-gray-600">5/5</span>
-            </div>
-            <div class="h-2 bg-gray-200 rounded-full">
-              <div class="h-full bg-blue-600 rounded-full" style="width: 100%"></div>
-            </div>
-          </div>
-
-          <!-- Skill Item: Problem Solving -->
-          <div class="flex flex-col space-y-2">
-            <div class="flex justify-between">
-              <span class="font-medium">Problem Solving</span>
-              <span class="text-sm text-gray-600">5/5</span>
-            </div>
-            <div class="h-2 bg-gray-200 rounded-full">
-              <div class="h-full bg-blue-600 rounded-full" style="width: 100%"></div>
-            </div>
-          </div>
-
-          <!-- Skill Item: Adaptability in Diverse Teams -->
-          <div class="flex flex-col space-y-2">
-            <div class="flex justify-between">
-              <span class="font-medium">Adaptability in Diverse Teams</span>
-              <span class="text-sm text-gray-600">5/5</span>
-            </div>
-            <div class="h-2 bg-gray-200 rounded-full">
-              <div class="h-full bg-blue-600 rounded-full" style="width: 100%"></div>
-            </div>
-          </div>
-
-          <!-- Skill Item: Professional Experience -->
-          <div class="flex flex-col space-y-2">
-            <div class="flex justify-between">
-              <span class="font-medium">Professional Experience</span>
-              <span class="text-sm text-gray-600">4/5</span>
-            </div>
-            <div class="h-2 bg-gray-200 rounded-full">
-              <div class="h-full bg-blue-600 rounded-full" style="width: 80%"></div>
-            </div>
-          </div>
-
-          <!-- Skill Item: Quick & Enthusiastic Learner -->
-          <div class="flex flex-col space-y-2">
-            <div class="flex justify-between">
-              <span class="font-medium">Quick & Enthusiastic Learner</span>
-              <span class="text-sm text-gray-600">5/5</span>
-            </div>
-            <div class="h-2 bg-gray-200 rounded-full">
-              <div class="h-full bg-blue-600 rounded-full" style="width: 100%"></div>
-            </div>
-          </div>
-        </div>
+        <ul class="space-y-3 text-gray-600 dark:text-gray-300">
+          <li>Teamwork</li>
+          <li>Problem Solving</li>
+          <li>Communication</li>
+          <li>Stress Management</li>
+          <li>Flexibility</li>
+          <li>Project Management</li>
+        </ul>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Links Section -->
-<section id="links" class="section bg-gray-100 dark:bg-gray-800">
+<!-- Contact Information Section (aiempi Links section) -->
+<section id="contact" class="section bg-gray-100 dark:bg-gray-800">
   <div class="container">
-    <h2 class="text-3xl font-bold text-center mb-12">Links</h2>
+    <h2 class="text-3xl font-bold text-center mb-12">Contact Information</h2>
     <div class="max-w-xl mx-auto flex flex-col items-center space-y-6">
       <a href="mailto:joosal@outlook.com" 
          class="text-2xl hover:text-blue-600 transition-colors">
         joosal@outlook.com
       </a>
-      <div class="flex space-x-8">
-        <a href="https://github.com/JoonasSal" 
-           class="text-2xl hover:text-blue-600 transition-colors"
-           target="_blank" 
-           rel="noopener noreferrer">
-          GitHub
-        </a>
-        <a href="https://linkedin.com/in/joonas-salmela" 
-           class="text-2xl hover:text-blue-600 transition-colors"
-           target="_blank" 
-           rel="noopener noreferrer">
-          LinkedIn
-        </a>
-      </div>
+      <a href="tel:+358445003952" 
+         class="text-2xl hover:text-blue-600 transition-colors">
+        +358 44 500 3952
+      </a>
     </div>
   </div>
 </section>
