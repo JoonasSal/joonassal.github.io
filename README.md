@@ -5,9 +5,10 @@ A modern, responsive portfolio website built with SvelteKit and TailwindCSS
 ## Features
 
 - Responsive design that works on all devices
-- Skills visualization with progress bars
+- Buttons that take you straight in to your GitHub and LinkedIn
+- Skills section
 - Project showcase section
-- Links section
+- Contact information section
 - **Automated build & deploy** pipeline (GitHub Actions)
 
 ## Tech Stack
