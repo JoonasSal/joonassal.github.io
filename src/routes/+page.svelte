@@ -5,6 +5,82 @@
     title: "Aspiring Developer",
     description: "I'm currently in my third year of studies for a Bachelor of Engineering in Information Technology, exploring software development and indulging my passion for all things tech. I also love games, books, and bringing a dash of quirky humor wherever I go."
   };
+
+  let showMyShowMoListDetails = false;
+  let showHuiputinDetails = false;
+
+  const myShowMoListDetails = {
+    techStack: [
+      // Frontend
+      "React",
+      "React Router",
+      "CSS",
+      "Preact Signals",
+      // Backend
+      "Node.js",
+      "Express.js",
+      "PostgreSQL",
+      "JWT Authentication",
+      // APIs
+      "TMDB API",
+      "Finnkino API",
+      // Testing
+      "Jest",
+      "React Testing Library",
+      "Chai",
+      "Mocha",
+      // Tools & Libraries
+      "Axios",
+      "Bcrypt",
+      "Cors",
+      "dotenv"
+    ],
+    learnings: [
+      "Full-stack development with React and Node.js ecosystem",
+      "Database design and PostgreSQL implementation",
+      "RESTful API development and integration with external APIs",
+      "User authentication and security best practices (JWT, Bcrypt)",
+      "Test-driven development using multiple testing frameworks",
+      "Agile team collaboration and Git workflow",
+      "Project management and documentation practices",
+      "Responsive web design and user experience considerations",
+      "State management and session handling",
+      "Error handling and loading state management"
+    ]
+  };
+
+  const huiputinDetails = {
+    techStack: [
+      // Frontend & Mobile
+      "React Native",
+      "Expo",
+      "React Native ReAnimated",
+      "React Native Gesture Handler",
+      // Backend & Services
+      "Firebase Authentication",
+      "Firebase Firestore",
+      "Firebase Cloud Storage",
+      // UI & Graphics
+      "SVG",
+      "Expo Camera",
+      // Development
+      "Expo CLI",
+      "Expo Go",
+      "Expo Build Service"
+    ],
+    learnings: [
+      "Mobile app development with React Native and Expo",
+      "Firebase ecosystem integration and real-time data handling",
+      "Complex gesture handling and animations in mobile apps",
+      "SVG manipulation for interactive map and drawing features",
+      "Camera integration and image processing",
+      "User authentication and file storage in Firebase",
+      "Mobile-specific UI/UX considerations",
+      "Theme implementation and state management",
+      "Collaborative development in a mobile project",
+      "Mobile app deployment and build process"
+    ]
+  };
 </script>
 
 <!-- Hero Section -->
@@ -47,7 +123,7 @@
       <p>
         My journey in technology began in elementary school when I built my first computer. 
         Over the years, my enthusiasm and curiosity for computing have only grown, 
-        and I’ve consistently followed the latest advancements in the field. I decided to deepen my 
+        and I've consistently followed the latest advancements in the field. I decided to deepen my 
         knowledge by studying a Bachelor of Engineering in Information Technology, allowing me to 
         combine my passion for tech with practical, real-world projects. My dream 
         is to work on cutting-edge technology initiatives, pushing myself to learn and evolve every day.
@@ -73,10 +149,48 @@
         </div>
         <div class="p-6">
           <h3 class="text-xl font-bold mb-2">HuiputinPaivakirja</h3>
-          <p class="text-gray-600 dark:text-gray-300 mb-4">This is a mobile application built using React Native and Google Firebase services. The application is a bouldering tracking tool tailored currently for a single local climbing hall at OKK (Oulun kiipeilykeskus; Oulu climbing centre). It allows users to log and track their climbs, create and manage climbing routes, and engage with other users through voting and content management.</p>
+          <p class="text-gray-600 dark:text-gray-300 mb-4">A mobile application built using React Native and Firebase services for bouldering
+             enthusiasts. Features include interactive climbing hall maps, route tracking, grade voting, and route management. The app allows
+              climbers to log their progress, create and share routes, and engage with the climbing community at OKK (Oulu Climbing Centre). 
+              Developed collaboratively in a team of four at Oulu University of Applied Sciences.</p>
           <div class="flex space-x-4">
             <a href="https://github.com/HuipuntinPaivakirja/HuiputinPaivakirja" 
                class="text-blue-600 hover:text-blue-700 transition-colors duration-300">GitHub</a>
+            <button
+              on:click={() => showHuiputinDetails = true}
+              class="text-blue-600 hover:text-blue-700 transition-colors duration-300">
+              Details
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- MyShowMoList Project Card -->
+      <div class="bg-white dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+        <div class="relative overflow-hidden group">
+          <img 
+            src="/myshowmolist-image.png" 
+            alt="MyShowMoList web application preview" 
+            class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" 
+          />
+          <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+        </div>
+        <div class="p-6">
+          <h3 class="text-xl font-bold mb-2">MyShowMoList</h3>
+          <p class="text-gray-600 dark:text-gray-300 mb-4">
+            A comprehensive full-stack web application for movie and TV show enthusiasts. Features include user authentication, 
+            advanced search with filtering, personalized watchlists, group creation for shared interests, and real-time Finnkino 
+            showtime integration. Built with React, Node.js, and PostgreSQL, emphasizing modern development practices and user experience.
+            Developed collaboratively in a team of five at Oulu University of Applied Sciences.
+          </p>
+          <div class="flex space-x-4">
+            <a href="https://github.com/TVTKMO22-WP-GROUP-13/TVTKMO23-WP-GROUP-13" 
+               class="text-blue-600 hover:text-blue-700 transition-colors duration-300">GitHub</a>
+            <button
+              on:click={() => showMyShowMoListDetails = true}
+              class="text-blue-600 hover:text-blue-700 transition-colors duration-300">
+              Details
+            </button>
           </div>
         </div>
       </div>
@@ -93,7 +207,9 @@
         </div>
         <div class="p-6">
           <h3 class="text-xl font-bold mb-2">Portfolio Website</h3>
-          <p class="text-gray-600 dark:text-gray-300 mb-4">A modern, responsive portfolio website built with SvelteKit and TailwindCSS. Features include automated build and deploy pipeline with GitHub Actions, skills visualization with progress bars, project showcase section, and responsive design that works seamlessly across all devices.</p>
+          <p class="text-gray-600 dark:text-gray-300 mb-4">A modern, responsive portfolio website built with SvelteKit and TailwindCSS.
+             Features include automated build and deploy pipeline with GitHub Actions, project showcase section, and responsive design
+              that works seamlessly across all devices.</p>
           <div class="flex space-x-4">
             <a href="https://github.com/JoonasSal/joonassal.github.io" 
                class="text-blue-600 hover:text-blue-700 transition-colors duration-300">GitHub</a>
@@ -168,3 +284,91 @@
     </div>
   </div>
 </section>
+
+<!-- Modal -->
+{#if showMyShowMoListDetails}
+  <div class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
+    <div class="bg-white dark:bg-gray-800 rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+      <div class="p-6">
+        <div class="flex justify-between items-center mb-6">
+          <h3 class="text-2xl font-bold">MyShowMoList Details</h3>
+          <button
+            on:click={() => showMyShowMoListDetails = false}
+            class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
+            aria-label="Close details"
+          >
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="space-y-6">
+          <div>
+            <h4 class="text-xl font-semibold mb-3">Tech Stack</h4>
+            <div class="flex flex-wrap gap-2">
+              {#each myShowMoListDetails.techStack as tech}
+                <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 rounded-full text-sm">
+                  {tech}
+                </span>
+              {/each}
+            </div>
+          </div>
+
+          <div>
+            <h4 class="text-xl font-semibold mb-3">What I Learned</h4>
+            <ul class="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-300">
+              {#each myShowMoListDetails.learnings as learning}
+                <li>{learning}</li>
+              {/each}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{/if}
+
+<!-- HuiputinPaivakirja Modal -->
+{#if showHuiputinDetails}
+  <div class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
+    <div class="bg-white dark:bg-gray-800 rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+      <div class="p-6">
+        <div class="flex justify-between items-center mb-6">
+          <h3 class="text-2xl font-bold">HuiputinPaivakirja Details</h3>
+          <button
+            on:click={() => showHuiputinDetails = false}
+            class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
+            aria-label="Close details"
+          >
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="space-y-6">
+          <div>
+            <h4 class="text-xl font-semibold mb-3">Tech Stack</h4>
+            <div class="flex flex-wrap gap-2">
+              {#each huiputinDetails.techStack as tech}
+                <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 rounded-full text-sm">
+                  {tech}
+                </span>
+              {/each}
+            </div>
+          </div>
+
+          <div>
+            <h4 class="text-xl font-semibold mb-3">What I Learned</h4>
+            <ul class="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-300">
+              {#each huiputinDetails.learnings as learning}
+                <li>{learning}</li>
+              {/each}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{/if}
