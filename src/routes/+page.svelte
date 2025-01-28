@@ -101,7 +101,7 @@
         <a href="https://github.com/JoonasSal" 
            target="_blank" 
            rel="noopener noreferrer" 
-           class="btn bg-gray-800 text-white hover:bg-gray-700 dark:bg-gray-700 dark:hover:bg-gray-600">
+           class="btn bg-gray-900 text-white hover:bg-gray-800 dark:bg-gray-600 dark:hover:bg-gray-500">
            GitHub
         </a>
         <a href="https://linkedin.com/in/joonas-salmela-6a8306346" 
@@ -138,7 +138,7 @@
     <h2 class="text-3xl font-bold text-center mb-12">Featured Projects</h2>
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       <!-- HuiputinPaivakirja Project Card -->
-      <div class="bg-white dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+      <div class="bg-white dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl flex flex-col">
         <div class="relative overflow-hidden group">
           <img 
             src="/huiputinmashup.png" 
@@ -147,18 +147,29 @@
           />
           <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
         </div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold mb-2">HuiputinPaivakirja</h3>
-          <p class="text-gray-600 dark:text-gray-300 mb-4">A mobile application built using React Native and Firebase services for bouldering
-             enthusiasts. Features include interactive climbing hall maps, route tracking, grade voting, and route management. The app allows
+        <div class="p-6 flex flex-col flex-grow">
+          <div class="flex-grow">
+            <h3 class="text-xl font-bold mb-2">HuiputinPaivakirja</h3>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-2 py-1 bg-gray-100 dark:bg-gray-600 text-sm rounded-md">React Native</span>
+              <span class="px-2 py-1 bg-gray-100 dark:bg-gray-600 text-sm rounded-md">Firebase</span>
+              <span class="px-2 py-1 bg-gray-100 dark:bg-gray-600 text-sm rounded-md">Expo</span>
+            </div>
+            <p class="text-gray-600 dark:text-gray-300">
+              A mobile application built using React Native and Firebase services for bouldering
+              enthusiasts. Features include interactive climbing hall maps, route tracking, grade voting, and route management. The app allows
               climbers to log their progress, create and share routes, and engage with the climbing community at OKK (Oulu Climbing Centre). 
-              Developed collaboratively in a team of four at Oulu University of Applied Sciences.</p>
-          <div class="flex space-x-4">
+              Developed collaboratively in a team of four at Oulu University of Applied Sciences.
+            </p>
+          </div>
+          <div class="flex space-x-4 mt-6 pt-4 border-t border-gray-100 dark:border-gray-600">
             <a href="https://github.com/HuipuntinPaivakirja/HuiputinPaivakirja" 
-               class="text-blue-600 hover:text-blue-700 transition-colors duration-300">GitHub</a>
+               class="btn btn-sm bg-gray-900 text-white hover:bg-gray-800 dark:bg-gray-600 dark:hover:bg-gray-500">
+              GitHub
+            </a>
             <button
               on:click={() => showHuiputinDetails = true}
-              class="text-blue-600 hover:text-blue-700 transition-colors duration-300">
+              class="btn btn-sm bg-blue-600 text-white hover:bg-blue-700">
               Details
             </button>
           </div>
@@ -166,7 +177,7 @@
       </div>
 
       <!-- MyShowMoList Project Card -->
-      <div class="bg-white dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+      <div class="bg-white dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl flex flex-col">
         <div class="relative overflow-hidden group">
           <img 
             src="/myshowmolist-image.png" 
@@ -175,20 +186,29 @@
           />
           <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
         </div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold mb-2">MyShowMoList</h3>
-          <p class="text-gray-600 dark:text-gray-300 mb-4">
-            A comprehensive full-stack web application for movie and TV show enthusiasts. Features include user authentication, 
-            advanced search with filtering, personalized watchlists, group creation for shared interests, and real-time Finnkino 
-            showtime integration. Built with React, Node.js, and PostgreSQL, emphasizing modern development practices and user experience.
-            Developed collaboratively in a team of five at Oulu University of Applied Sciences.
-          </p>
-          <div class="flex space-x-4">
+        <div class="p-6 flex flex-col flex-grow">
+          <div class="flex-grow">
+            <h3 class="text-xl font-bold mb-2">MyShowMoList</h3>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-2 py-1 bg-gray-100 dark:bg-gray-600 text-sm rounded-md">React</span>
+              <span class="px-2 py-1 bg-gray-100 dark:bg-gray-600 text-sm rounded-md">Node.js</span>
+              <span class="px-2 py-1 bg-gray-100 dark:bg-gray-600 text-sm rounded-md">PostgreSQL</span>
+            </div>
+            <p class="text-gray-600 dark:text-gray-300">
+              A comprehensive full-stack web application for movie and TV show enthusiasts. Features include user authentication, 
+              advanced search with filtering, personalized watchlists, group creation for shared interests, and real-time Finnkino 
+              showtime integration. Built with React, Node.js, and PostgreSQL, emphasizing modern development practices and user experience.
+              Developed collaboratively in a team of five at Oulu University of Applied Sciences.
+            </p>
+          </div>
+          <div class="flex space-x-4 mt-6 pt-4 border-t border-gray-100 dark:border-gray-600">
             <a href="https://github.com/TVTKMO22-WP-GROUP-13/TVTKMO23-WP-GROUP-13" 
-               class="text-blue-600 hover:text-blue-700 transition-colors duration-300">GitHub</a>
+               class="btn btn-sm bg-gray-900 text-white hover:bg-gray-800 dark:bg-gray-600 dark:hover:bg-gray-500">
+              GitHub
+            </a>
             <button
               on:click={() => showMyShowMoListDetails = true}
-              class="text-blue-600 hover:text-blue-700 transition-colors duration-300">
+              class="btn btn-sm bg-blue-600 text-white hover:bg-blue-700">
               Details
             </button>
           </div>
@@ -196,7 +216,7 @@
       </div>
 
       <!-- Portfolio Website Project Card -->
-      <div class="bg-white dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl">
+      <div class="bg-white dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl flex flex-col">
         <div class="relative overflow-hidden group">
           <img 
             src="/portfolio-header.png" 
@@ -205,14 +225,25 @@
           />
           <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
         </div>
-        <div class="p-6">
-          <h3 class="text-xl font-bold mb-2">Portfolio Website</h3>
-          <p class="text-gray-600 dark:text-gray-300 mb-4">A modern, responsive portfolio website built with SvelteKit and TailwindCSS.
-             Features include automated build and deploy pipeline with GitHub Actions, project showcase section, and responsive design
-              that works seamlessly across all devices.</p>
-          <div class="flex space-x-4">
+        <div class="p-6 flex flex-col flex-grow">
+          <div class="flex-grow">
+            <h3 class="text-xl font-bold mb-2">Portfolio Website</h3>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-2 py-1 bg-gray-100 dark:bg-gray-600 text-sm rounded-md">SvelteKit</span>
+              <span class="px-2 py-1 bg-gray-100 dark:bg-gray-600 text-sm rounded-md">TailwindCSS</span>
+              <span class="px-2 py-1 bg-gray-100 dark:bg-gray-600 text-sm rounded-md">GitHub Actions</span>
+            </div>
+            <p class="text-gray-600 dark:text-gray-300">
+              A modern, responsive portfolio website built with SvelteKit and TailwindCSS.
+              Features include automated build and deploy pipeline with GitHub Actions, project showcase section, and responsive design
+              that works seamlessly across all devices.
+            </p>
+          </div>
+          <div class="flex space-x-4 mt-6 pt-4 border-t border-gray-100 dark:border-gray-600">
             <a href="https://github.com/JoonasSal/joonassal.github.io" 
-               class="text-blue-600 hover:text-blue-700 transition-colors duration-300">GitHub</a>
+               class="btn btn-sm bg-gray-900 text-white hover:bg-gray-800 dark:bg-gray-600 dark:hover:bg-gray-500">
+              GitHub
+            </a>
           </div>
         </div>
       </div>
@@ -308,7 +339,7 @@
             <h4 class="text-xl font-semibold mb-3">Tech Stack</h4>
             <div class="flex flex-wrap gap-2">
               {#each myShowMoListDetails.techStack as tech}
-                <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 rounded-full text-sm">
+                <span class="px-3 py-1 bg-blue-600 text-white rounded-full text-sm hover:bg-blue-700">
                   {tech}
                 </span>
               {/each}
@@ -352,7 +383,7 @@
             <h4 class="text-xl font-semibold mb-3">Tech Stack</h4>
             <div class="flex flex-wrap gap-2">
               {#each huiputinDetails.techStack as tech}
-                <span class="px-3 py-1 bg-blue-100 dark:bg-blue-900 text-blue-800 dark:text-blue-100 rounded-full text-sm">
+                <span class="px-3 py-1 bg-blue-600 text-white rounded-full text-sm hover:bg-blue-700">
                   {tech}
                 </span>
               {/each}
