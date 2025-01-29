@@ -8,6 +8,7 @@
 
   let showMyShowMoListDetails = false;
   let showHuiputinDetails = false;
+  let showBankAutomatDetails = false;
 
   const myShowMoListDetails = {
     techStack: [
@@ -79,6 +80,38 @@
       "Theme implementation and state management",
       "Collaborative development in a mobile project",
       "Mobile app deployment and build process"
+    ]
+  };
+
+  const bankAutomatDetails = {
+    techStack: [
+      // Backend
+      "Node.js",
+      "Express.js",
+      "MySQL",
+      "JWT Authentication",
+      "bcryptjs",
+      "Morgan",
+      // Frontend
+      "C++",
+      "Qt Framework",
+      // Testing
+      "Postman",
+      // Tools & Libraries
+      "cors",
+      "dotenv"
+    ],
+    learnings: [
+      "Full-stack development with C++ and Node.js",
+      "Desktop application development with Qt Framework",
+      "RESTful API design and implementation",
+      "Database design and stored procedures in MySQL",
+      "Secure authentication and PIN handling",
+      "Cross-platform development considerations",
+      "API testing with Postman",
+      "Transaction management and data integrity",
+      "Error handling in distributed systems",
+      "Multi-component system architecture"
     ]
   };
 </script>
@@ -247,6 +280,45 @@
           </div>
         </div>
       </div>
+
+      <!-- Bank Automat Project Card -->
+      <div class="bg-white dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl flex flex-col">
+        <div class="relative overflow-hidden group">
+          <img 
+            src="/bank-automat-image.png" 
+            alt="Bank Automat desktop application preview" 
+            class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" 
+          />
+          <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+        </div>
+        <div class="p-6 flex flex-col flex-grow">
+          <div class="flex-grow">
+            <h3 class="text-xl font-bold mb-2">Bank Automat</h3>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-2 py-1 bg-gray-100 dark:bg-gray-600 text-sm rounded-md">C++</span>
+              <span class="px-2 py-1 bg-gray-100 dark:bg-gray-600 text-sm rounded-md">Node.js</span>
+              <span class="px-2 py-1 bg-gray-100 dark:bg-gray-600 text-sm rounded-md">MySQL</span>
+            </div>
+            <p class="text-gray-600 dark:text-gray-300">
+              A comprehensive banking system featuring a Qt-based desktop application and Node.js backend. 
+              The system includes secure user authentication, account management, card operations, and transaction handling. 
+              Built with C++ and Qt Framework for the frontend, Node.js and MySQL for the backend, utilizing stored procedures 
+              for complex banking operations and JWT for secure authentication. Developed collaboratively in a team of five at Oulu University of Applied Sciences.
+            </p>
+          </div>
+          <div class="flex space-x-4 mt-6 pt-4 border-t border-gray-100 dark:border-gray-600">
+            <a href="https://github.com/JoonasSal/bank-automat" 
+               class="btn btn-sm bg-gray-900 text-white hover:bg-gray-800 dark:bg-gray-600 dark:hover:bg-gray-500">
+              GitHub
+            </a>
+            <button
+              on:click={() => showBankAutomatDetails = true}
+              class="btn btn-sm bg-blue-600 text-white hover:bg-blue-700">
+              Details
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -257,43 +329,49 @@
     <h2 class="text-3xl font-bold text-center mb-12">Skills</h2>
     
     <div class="grid md:grid-cols-3 gap-8">
-      <!-- Coding Languages -->
+      <!-- Programming Languages & Frameworks -->
       <div class="text-center">
-        <h3 class="text-2xl font-bold mb-6">Coding</h3>
-        <ul class="space-y-3 text-gray-600 dark:text-gray-300">
-          <li>JavaScript</li>
-          <li>React</li>
-          <li>React Native</li>
-          <li>Kotlin</li>
-          <li>C++</li>
-          <li>Python</li>
-        </ul>
+        <h3 class="text-2xl font-bold mb-6">Programming Languages & Frameworks</h3>
+        <div class="flex flex-wrap justify-center gap-2">
+          <span class="px-2 py-1 bg-gray-100 dark:bg-gray-600 text-sm rounded-md">JavaScript</span>
+          <span class="px-2 py-1 bg-gray-100 dark:bg-gray-600 text-sm rounded-md">React</span>
+          <span class="px-2 py-1 bg-gray-100 dark:bg-gray-600 text-sm rounded-md">React Native</span>
+          <span class="px-2 py-1 bg-gray-100 dark:bg-gray-600 text-sm rounded-md">C++</span>
+          <span class="px-2 py-1 bg-gray-100 dark:bg-gray-600 text-sm rounded-md">Node.js</span>
+          <span class="px-2 py-1 bg-gray-100 dark:bg-gray-600 text-sm rounded-md">SvelteKit</span>
+          <span class="px-2 py-1 bg-gray-100 dark:bg-gray-600 text-sm rounded-md">Express.js</span>
+          <span class="px-2 py-1 bg-gray-100 dark:bg-gray-600 text-sm rounded-md">Qt Framework</span>
+        </div>
       </div>
 
       <!-- Tools & Technologies -->
       <div class="text-center">
         <h3 class="text-2xl font-bold mb-6">Tools & Technologies</h3>
-        <ul class="space-y-3 text-gray-600 dark:text-gray-300">
-          <li>Node.js</li>
-          <li>Firebase</li>
-          <li>Docker</li>
-          <li>Proxmox</li>
-          <li>Git</li>
-          <li>MySQL</li>
-        </ul>
+        <div class="flex flex-wrap justify-center gap-2">
+          <span class="px-2 py-1 bg-gray-100 dark:bg-gray-600 text-sm rounded-md">MySQL</span>
+          <span class="px-2 py-1 bg-gray-100 dark:bg-gray-600 text-sm rounded-md">PostgreSQL</span>
+          <span class="px-2 py-1 bg-gray-100 dark:bg-gray-600 text-sm rounded-md">Firebase</span>
+          <span class="px-2 py-1 bg-gray-100 dark:bg-gray-600 text-sm rounded-md">Git</span>
+          <span class="px-2 py-1 bg-gray-100 dark:bg-gray-600 text-sm rounded-md">TailwindCSS</span>
+          <span class="px-2 py-1 bg-gray-100 dark:bg-gray-600 text-sm rounded-md">JWT Auth</span>
+          <span class="px-2 py-1 bg-gray-100 dark:bg-gray-600 text-sm rounded-md">REST APIs</span>
+          <span class="px-2 py-1 bg-gray-100 dark:bg-gray-600 text-sm rounded-md">GitHub Actions</span>
+        </div>
       </div>
 
-      <!-- Soft Skills -->
+      <!-- Professional Skills -->
       <div class="text-center">
-        <h3 class="text-2xl font-bold mb-6">Soft Skills</h3>
-        <ul class="space-y-3 text-gray-600 dark:text-gray-300">
-          <li>Teamwork</li>
-          <li>Problem Solving</li>
-          <li>Communication</li>
-          <li>Stress Management</li>
-          <li>Flexibility</li>
-          <li>Project Management</li>
-        </ul>
+        <h3 class="text-2xl font-bold mb-6">Professional Skills</h3>
+        <div class="flex flex-wrap justify-center gap-2">
+          <span class="px-2 py-1 bg-gray-100 dark:bg-gray-600 text-sm rounded-md">Agile Development</span>
+          <span class="px-2 py-1 bg-gray-100 dark:bg-gray-600 text-sm rounded-md">Test-Driven Development</span>
+          <span class="px-2 py-1 bg-gray-100 dark:bg-gray-600 text-sm rounded-md">UI/UX Design</span>
+          <span class="px-2 py-1 bg-gray-100 dark:bg-gray-600 text-sm rounded-md">Project Management</span>
+          <span class="px-2 py-1 bg-gray-100 dark:bg-gray-600 text-sm rounded-md">Team Collaboration</span>
+          <span class="px-2 py-1 bg-gray-100 dark:bg-gray-600 text-sm rounded-md">Problem Solving</span>
+          <span class="px-2 py-1 bg-gray-100 dark:bg-gray-600 text-sm rounded-md">Documentation</span>
+          <span class="px-2 py-1 bg-gray-100 dark:bg-gray-600 text-sm rounded-md">System Architecture</span>
+        </div>
       </div>
     </div>
   </div>
@@ -394,6 +472,50 @@
             <h4 class="text-xl font-semibold mb-3">What I Learned</h4>
             <ul class="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-300">
               {#each huiputinDetails.learnings as learning}
+                <li>{learning}</li>
+              {/each}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{/if}
+
+<!-- Bank Automat Modal -->
+{#if showBankAutomatDetails}
+  <div class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
+    <div class="bg-white dark:bg-gray-800 rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+      <div class="p-6">
+        <div class="flex justify-between items-center mb-6">
+          <h3 class="text-2xl font-bold">Bank Automat Details</h3>
+          <button
+            on:click={() => showBankAutomatDetails = false}
+            class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
+            aria-label="Close details"
+          >
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="space-y-6">
+          <div>
+            <h4 class="text-xl font-semibold mb-3">Tech Stack</h4>
+            <div class="flex flex-wrap gap-2">
+              {#each bankAutomatDetails.techStack as tech}
+                <span class="px-3 py-1 bg-blue-600 text-white rounded-full text-sm hover:bg-blue-700">
+                  {tech}
+                </span>
+              {/each}
+            </div>
+          </div>
+
+          <div>
+            <h4 class="text-xl font-semibold mb-3">What I Learned</h4>
+            <ul class="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-300">
+              {#each bankAutomatDetails.learnings as learning}
                 <li>{learning}</li>
               {/each}
             </ul>
