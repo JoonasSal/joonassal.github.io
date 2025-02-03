@@ -9,6 +9,7 @@
   let showMyShowMoListDetails = false;
   let showHuiputinDetails = false;
   let showBankAutomatDetails = false;
+  let showEdgeTalkDetails = false;
 
   const myShowMoListDetails = {
     techStack: [
@@ -112,6 +113,38 @@
       "Transaction management and data integrity",
       "Error handling in distributed systems",
       "Multi-component system architecture"
+    ]
+  };
+
+  const edgeTalkDetails = {
+    techStack: [
+      // Frontend & Mobile
+      "React Native",
+      "Expo",
+      "Expo CLI",
+      // Backend
+      "Python",
+      "Flask",
+      "Flask-CORS",
+      // AI & Models
+      "Ollama",
+      "LLM Integration",
+      // Development
+      "Environment Variables",
+      "REST APIs",
+      "WebSocket"
+    ],
+    learnings: [
+      "Mobile app development with React Native and Expo",
+      "Flask backend development and API design",
+      "Integration of Large Language Models (LLMs)",
+      "Real-time chat interface implementation",
+      "Cross-platform development considerations",
+      "Environment configuration and security",
+      "API endpoint design and implementation",
+      "Error handling and user feedback",
+      "Mobile-specific UI/UX design principles",
+      "Local development and testing workflows"
     ]
   };
 </script>
@@ -319,6 +352,44 @@
           </div>
         </div>
       </div>
+
+      <!-- EdgeTalk Project Card -->
+      <div class="bg-white dark:bg-gray-700 rounded-lg overflow-hidden shadow-lg transition-transform duration-300 hover:scale-105 hover:shadow-xl flex flex-col">
+        <div class="relative overflow-hidden group">
+          <img 
+            src="/edgetalk-preview.png" 
+            alt="EdgeTalk mobile chat interface preview" 
+            class="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110" 
+          />
+          <div class="absolute inset-0 bg-black opacity-0 group-hover:opacity-10 transition-opacity duration-300"></div>
+        </div>
+        <div class="p-6 flex flex-col flex-grow">
+          <div class="flex-grow">
+            <h3 class="text-xl font-bold mb-2">EdgeTalk</h3>
+            <div class="flex flex-wrap gap-2 mb-4">
+              <span class="px-2 py-1 bg-gray-100 dark:bg-gray-600 text-sm rounded-md">React Native</span>
+              <span class="px-2 py-1 bg-gray-100 dark:bg-gray-600 text-sm rounded-md">Flask</span>
+              <span class="px-2 py-1 bg-gray-100 dark:bg-gray-600 text-sm rounded-md">LLM</span>
+            </div>
+            <p class="text-gray-600 dark:text-gray-300">
+              A mobile chat application built with React Native that enables users to interact with AI models through a Flask API backend.
+              Features include a user-friendly chat interface, customizable API endpoints, and local LLM model integration.
+              The app provides full control over both the language model and prompts, making it a versatile tool for AI interaction on mobile devices.
+            </p>
+          </div>
+          <div class="flex space-x-4 mt-6 pt-4 border-t border-gray-100 dark:border-gray-600">
+            <a href="https://github.com/JoonasSal/we-have-gpt-at-home" 
+               class="btn btn-sm bg-gray-900 text-white hover:bg-gray-800 dark:bg-gray-600 dark:hover:bg-gray-500">
+              GitHub
+            </a>
+            <button
+              on:click={() => showEdgeTalkDetails = true}
+              class="btn btn-sm bg-blue-600 text-white hover:bg-blue-700">
+              Details
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
@@ -468,7 +539,7 @@
             </div>
           </div>
 
-          <div>
+        <div>
             <h4 class="text-xl font-semibold mb-3">What I Learned</h4>
             <ul class="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-300">
               {#each huiputinDetails.learnings as learning}
@@ -512,10 +583,54 @@
             </div>
           </div>
 
-          <div>
+        <div>
             <h4 class="text-xl font-semibold mb-3">What I Learned</h4>
             <ul class="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-300">
               {#each bankAutomatDetails.learnings as learning}
+                <li>{learning}</li>
+              {/each}
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+{/if}
+
+<!-- EdgeTalk Modal -->
+{#if showEdgeTalkDetails}
+  <div class="fixed inset-0 bg-black bg-opacity-50 z-50 flex items-center justify-center p-4">
+    <div class="bg-white dark:bg-gray-800 rounded-lg max-w-2xl w-full max-h-[90vh] overflow-y-auto">
+      <div class="p-6">
+        <div class="flex justify-between items-center mb-6">
+          <h3 class="text-2xl font-bold">EdgeTalk Details</h3>
+          <button
+            on:click={() => showEdgeTalkDetails = false}
+            class="text-gray-500 hover:text-gray-700 dark:text-gray-400 dark:hover:text-gray-200"
+            aria-label="Close details"
+          >
+            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+
+        <div class="space-y-6">
+          <div>
+            <h4 class="text-xl font-semibold mb-3">Tech Stack</h4>
+            <div class="flex flex-wrap gap-2">
+              {#each edgeTalkDetails.techStack as tech}
+                <span class="px-3 py-1 bg-blue-600 text-white rounded-full text-sm hover:bg-blue-700">
+                  {tech}
+                </span>
+              {/each}
+            </div>
+          </div>
+
+        <div>
+            <h4 class="text-xl font-semibold mb-3">What I Learned</h4>
+            <ul class="list-disc list-inside space-y-2 text-gray-600 dark:text-gray-300">
+              {#each edgeTalkDetails.learnings as learning}
                 <li>{learning}</li>
               {/each}
             </ul>
